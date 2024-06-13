@@ -123,7 +123,7 @@ class Flappy:
         if results.multi_hand_landmarks:
             for hand_landmarks in results.multi_hand_landmarks:
                 if is_thumb_index_touching(hand_landmarks.landmark):
-                    sound.play()
+                    # sound.play()
                     return True
         return False
 
