@@ -1,8 +1,12 @@
 import asyncio
 import sys
-
+import cv2
+import mediapipe as mp
+import numpy as np
 import pygame
+import pyautogui
 from pygame.locals import K_ESCAPE, K_SPACE, K_UP, KEYDOWN, QUIT
+from google.protobuf.json_format import MessageToDict
 
 from .entities import (
     Background,
@@ -16,6 +20,34 @@ from .entities import (
 )
 from .utils import GameConfig, Images, Sounds, Window
 
+# Initialize Pygame mixer
+pygame.mixer.init()
+
+# Load the sound effect
+# sound = pygame.mixer.Sound('C:/Users/Jaswanth/OneDrive/Desktop/My_folder/Coding/Project/FlapPyBird/sound.wav')
+
+# Initializing the Model
+mpHands = mp.solutions.hands
+hands = mpHands.Hands(
+    static_image_mode=False,
+    model_complexity=1,
+    min_detection_confidence=0.75,
+    min_tracking_confidence=0.75,
+    max_num_hands=2)
+
+# Start capturing video from webcam
+cap = cv2.VideoCapture(0)
+
+def is_thumb_index_touching(landmarks):
+    thumb_tip = landmarks[mpHands.HandLandmark.THUMB_TIP]
+    index_tip = landmarks[mpHands.HandLandmark.INDEX_FINGER_TIP]
+
+    distance = np.sqrt(
+        (thumb_tip.x - index_tip.x) ** 2 +
+        (thumb_tip.y - index_tip.y) ** 2 +
+        (thumb_tip.z - index_tip.z) ** 2
+    )
+    return distance < 0.05
 
 class Flappy:
     def __init__(self):
@@ -82,6 +114,19 @@ class Flappy:
         screen_tap = event.type == pygame.FINGERDOWN
         return m_left or space_or_up or screen_tap
 
+    def check_gesture_event(self):
+        success, img = cap.read()
+        img = cv2.flip(img, 1)
+        imgRGB = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
+        results = hands.process(imgRGB)
+
+        if results.multi_hand_landmarks:
+            for hand_landmarks in results.multi_hand_landmarks:
+                if is_thumb_index_touching(hand_landmarks.landmark):
+                    sound.play()
+                    return True
+        return False
+
     async def play(self):
         self.score.reset()
         self.player.set_mode(PlayerMode.NORMAL)
@@ -98,6 +143,8 @@ class Flappy:
                 self.check_quit_event(event)
                 if self.is_tap_event(event):
                     self.player.flap()
+            if self.check_gesture_event():
+                self.player.flap()
 
             self.background.tick()
             self.floor.tick()
@@ -122,6 +169,9 @@ class Flappy:
                 if self.is_tap_event(event):
                     if self.player.y + self.player.h >= self.floor.y - 1:
                         return
+            if self.check_gesture_event():
+                if self.player.y + self.player.h >= self.floor.y - 1:
+                    return
 
             self.background.tick()
             self.floor.tick()
