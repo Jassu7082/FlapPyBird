@@ -15,7 +15,9 @@ Below is the identified image of the hand. The movement captured in this image's
 
 <img src="https://github.com/Jassu7082/FlapPyBird/assets/93179274/e7e5d06a-a1ff-4217-af6f-4e178813ea1a" alt="FlapPyBird Image" width="500" height="400">
 
-**How to play**
+
+How to play
+---------------------------
 1. The primary rule of Flappy Bird is to navigate the bird through obstacles without touching them or the ground.
 
 2. We maneuver the bird by making a specific hand gesture —> Touching the tips of the index and thumb fingers to form an "O" shape.
