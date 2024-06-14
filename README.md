@@ -1,4 +1,4 @@
-[FlapPyBird](https://sourabhv.github.io/FlapPyBird)
+![image](https://github.com/Jassu7082/FlapPyBird/assets/93179274/669e9637-afce-4e56-b5a5-28c196f1fe8c)[FlapPyBird](https://github.com/Jassu7082/FlapPyBird)
 ===============
 
 A Flappy Bird Clone made using [python-pygame][pygame]
@@ -7,6 +7,9 @@ A Flappy Bird Clone made using [python-pygame][pygame]
 
 [pygame]: http://www.pygame.org
 [one-file-game]: https://github.com/sourabhv/FlapPyBird/blob/038359dc6122f8d851e816ddb3e7d28229d585e5/flappy.py
+
+![image](https://github.com/Jassu7082/FlapPyBird/assets/93179274/e7e5d06a-a1ff-4217-af6f-4e178813ea1a)
+
 
 
 Setup (as tested on Windows)
