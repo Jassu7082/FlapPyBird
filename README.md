@@ -58,8 +58,9 @@ Made something awesome from FlapPyBird? Add it to the list :)
 Demo
 ----------
 
-<video  controls muted>
-  <source src="https://github.com/memes-mami/waku-waku/raw/main/WhatsApp%20Video%202024-06-14%20at%203.18.27%20PM.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+
+https://github.com/Jassu7082/FlapPyBird/assets/93179274/1986222a-ca05-4fac-b1d4-20e2fff2e7db
+
+
+
 
