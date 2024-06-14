@@ -45,6 +45,7 @@ Setup (as tested on Windows)
 
 Notable forks
 -------------
+- [FlapPy touch to control the bird](https://github.com/Jassu7082/FlapPyBird)
 - [FlapPyBlink Blink to control the bird](https://github.com/sero583/FlappyBlink)
 - [FlappyBird Fury Mode](https://github.com/Cc618/FlapPyBird)
 - [FlappyBird Model Predictive Control](https://github.com/philzook58/FlapPyBird-MPC)
@@ -57,4 +58,8 @@ Made something awesome from FlapPyBird? Add it to the list :)
 Demo
 ----------
 
-https://user-images.githubusercontent.com/2307626/130682424-9254b32d-efe0-406e-a6ea-3fb625a2df5e.mp4
+<video  controls muted>
+  <source src="https://github.com/memes-mami/waku-waku/raw/main/WhatsApp%20Video%202024-06-14%20at%203.18.27%20PM.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
