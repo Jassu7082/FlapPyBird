@@ -58,8 +58,8 @@ Made something awesome from FlapPyBird? Add it to the list :)
 Demo
 ----------
 
+https://github.com/Jassu7082/FlapPyBird/assets/93179274/b1f5eb28-6c98-48f3-9fca-1eacf1c4bcef
 
-https://github.com/Jassu7082/FlapPyBird/assets/93179274/1986222a-ca05-4fac-b1d4-20e2fff2e7db
 
 
 
