@@ -8,10 +8,19 @@ A Flappy Bird Clone made using [python-pygame][pygame]
 [pygame]: http://www.pygame.org
 [one-file-game]: https://github.com/sourabhv/FlapPyBird/blob/038359dc6122f8d851e816ddb3e7d28229d585e5/flappy.py
 
+Game Description
+---------------------------
+We are employing computer vision to recognize specific hand movements, which correspond to the birds' jumps in the flappy-bird game.
+Below is the identified image of the hand. The movement captured in this image's frames helps identify the specific gestures needed to play the game.
+
 <img src="https://github.com/Jassu7082/FlapPyBird/assets/93179274/e7e5d06a-a1ff-4217-af6f-4e178813ea1a" alt="FlapPyBird Image" width="500" height="400">
 
+**How to play**
+1. The primary rule of Flappy Bird is to navigate the bird through obstacles without touching them or the ground.
 
+2. We maneuver the bird by making a specific hand gesture —> Touching the tips of the index and thumb fingers to form an "O" shape.
 
+3. Ensure adequate lighting conditions before playing to ensure a seamless gameplay experience.
 
 Setup (as tested on Windows)
 ---------------------------
