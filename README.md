@@ -8,7 +8,7 @@ A Flappy Bird Clone made using [python-pygame][pygame]
 [pygame]: http://www.pygame.org
 [one-file-game]: https://github.com/sourabhv/FlapPyBird/blob/038359dc6122f8d851e816ddb3e7d28229d585e5/flappy.py
 
-<img src="https://github.com/Jassu7082/FlapPyBird/assets/93179274/e7e5d06a-a1ff-4217-af6f-4e178813ea1a" alt="FlapPyBird Image" width="500" height="500">
+<img src="https://github.com/Jassu7082/FlapPyBird/assets/93179274/e7e5d06a-a1ff-4217-af6f-4e178813ea1a" alt="FlapPyBird Image" width="500" height="400">
 
 
 
