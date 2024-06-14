@@ -31,15 +31,15 @@ Setup (as tested on Windows)
 
 2. Run `make init` (this will install pip packages, use virtualenv or something similar if you don't want to install globally)
 
-3. Run `make` to run the game. Run `DEBUG=True make` to see rects and coords  (marchali)
+3. Use this code to install the required libraries to play `pip install pygame opencv-python-headless mediapipe numpy` .
 
-4. Use this code to install the required libraries to play "pip install pygame opencv-python-headless mediapipe numpy".
+4. Allow the camera permissions to play.
 
-5. Allow the camera permissions to play.
+5. Run `main.py` to play the game. 
 
 6. Use <kbd>&uarr;</kbd> or <kbd>Space</kbd> key to play and <kbd>Esc</kbd> to close the game.
 
-7. Optionally run `make web` to run the game in the browser (`pygbag`).
+&.To play the game in the browser, you can optionally use "make web" command (pygbag).
 
    
 
